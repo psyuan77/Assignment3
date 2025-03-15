@@ -1,0 +1,16 @@
+extends static
+
+block content
+  main
+    .project-detail-container
+      h2#project-title= project.title
+      ul#project-tech
+        each tech in project.tech
+          li= tech
+
+      img(src=project.screenshot alt=project.title)
+      
+      p#project-summary= project.summary
+      p#project-description= project.description
+
+      a(href="/projects") Back to projects

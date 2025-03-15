@@ -1,0 +1,21 @@
+extends static
+
+block content
+    main
+        .project-header
+            h1 My Projects
+            input(type="text" id="search" placeholder="Search projects...")
+
+        .project-card-container
+            each project in projects
+                .project-card(data-title=project.title data-summary=project.summary)
+                    img(src=project.screenshot alt="Project Screenshot")
+                    h2.project-title= project.title
+                    p.project-summary= project.summary
+                    ul
+                        each tech in project.tech
+                            li= tech
+                    a(href=`/projects/${project._id}`) View Details
+        script(src="/scripts/script.js") // script
+
+

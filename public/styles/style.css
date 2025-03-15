@@ -1,0 +1,247 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body setup */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and nav bar*/
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: large;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  align-self: flex-start; /* Align h1 to the left */
+}
+
+/* style of about and home page's content */
+p {
+  font-size: 26px;
+  padding: 0 50px;
+  margin: 25px 0;
+  font-style: italic;
+}
+
+/* Projects page style */
+#search {
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 250px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+/* Project cards */
+.project-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-summary {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.project-card ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-card ul li {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: pink;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: rgb(16, 153, 233);
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 8px;
+  text-align: center;
+}
+/* Projects page style ends here*/
+
+/* Project detail page style */
+.detail-header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.project-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-detail-container a {
+  text-decoration: none;
+  background-color: rgb(181, 220, 242);
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#project-title {
+  margin: 10px 0;
+}
+
+#project-tech {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 5px;
+}
+
+#project-tech li {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: pink;
+}
+
+.project-detail-container img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#project-description {
+  text-align: left;
+  align-self: flex-start;
+}
+/* Project detail page style ends here*/
+
+/* Contact page style */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.contact-container h1 {
+  align-self: flex-start;
+  /* margin-left: 20px; */
+}
+
+form {
+  background: rgb(206, 232, 246);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.contact-name,
+.contact-message {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(174, 174, 174);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+textarea {
+  height: 160px;
+  resize: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Contact page style ends here*/
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
